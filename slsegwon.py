@@ -1,8 +1,9 @@
 import streamlit as st
 import pandas as pd
+import plotly.express as px
 
 # GitHub CSV file path
-file_path = 'https://raw.githubusercontent.com/cdshadow/dj_move/main/slsegwon.csv'
+file_path = 'https://raw.githubusercontent.com/cdshadow/slsegwon/main/slsegwon.csv'
 
 # Caching the data loading process
 @st.cache_data
