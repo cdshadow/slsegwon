@@ -8,7 +8,7 @@ file_path = 'https://raw.githubusercontent.com/cdshadow/slsegwon/main/slsegwon.c
 # Caching the data loading process
 @st.cache_data
 def load_data(file_path):
-    data = pd.read_csv(file_path, encoding='cp949')
+    data = pd.read_csv(file_path)#, encoding='cp949'
     return data
 
 # Load data file
