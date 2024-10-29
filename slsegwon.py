@@ -14,6 +14,20 @@ def load_data(file_path):
 # Load data file
 data = load_data(file_path)
 
-# Display the table with a smaller title
-st.subheader('소규모 체육시설 서비스가 필요한 1인가구 슬세권')
+# Center align title
+st.markdown("<h3 style='text-align: center;'>소규모 체육시설 서비스가 필요한 1인가구 슬세권</h3>", unsafe_allow_html=True)
+
+# Center align table contents using CSS
+st.markdown(
+    """
+    <style>
+        .css-1p05t4e tr, .css-1p05t4e th, .css-1p05t4e td {
+            text-align: center;
+        }
+    </style>
+    """, 
+    unsafe_allow_html=True
+)
+
+# Display table
 st.table(data)
